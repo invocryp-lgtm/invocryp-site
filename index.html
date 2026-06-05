@@ -3,138 +3,332 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Invocryp Radar — Inteligência Comercial</title>
-  <meta name="description" content="Invocryp Radar identifica sinais públicos de mercado e transforma-os em oportunidades comerciais qualificadas para empresas em Portugal." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+
+  <meta
+    name="description"
+    content="A Invocryp Radar identifica sinais comerciais, contratos e oportunidades de mercado através de dados públicos, análise inteligente e rastreio profissional."
+  />
+
+  <meta name="author" content="Invocryp Radar" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Invocryp Radar — Inteligência Comercial" />
+  <meta
+    property="og:description"
+    content="Monitorizamos sinais públicos de mercado para identificar oportunidades comerciais antes que sejam perdidas."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://invocryp.com" />
+  <meta property="og:image" content="https://invocryp.com/assets/img/og-image.png" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
-  <header class="navbar">
-    <a href="#topo" class="brand">
-      <span class="brand-mark">I</span>
-      <span>Invocryp</span>
-    </a>
-    <nav>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#setores">Setores</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="/" class="brand" aria-label="Página inicial da Invocryp Radar">
+        <span class="brand-mark">IR</span>
+        <span class="brand-text">
+          <strong>Invocryp</strong>
+          <small>Radar</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="/">Início</a>
+        <a href="/como-funciona/">Como funciona</a>
+        <a href="/setores/">Setores</a>
+        <a href="/parceiros/">Parceiros</a>
+        <a href="/compliance/">Compliance</a>
+        <a href="/contacto/" class="nav-cta">Receber oportunidades</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="topo">
-    <section class="hero">
-      <div class="hero-content">
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Radar Invocryp</span>
+
+          <h1>
+            Descobrimos sinais de mercado que podem virar contratos.
+          </h1>
+
+          <p class="hero-description">
+            Monitorizamos fontes públicas, movimentos empresariais e sinais comerciais
+            para identificar oportunidades antes que sejam perdidas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="/contacto/" class="btn btn-primary">Quero receber oportunidades</a>
+            <a href="/como-funciona/" class="btn btn-secondary">Ver como funciona</a>
+          </div>
+
+          <div class="hero-proof">
+            <span>Dados públicos</span>
+            <span>Análise inteligente</span>
+            <span>Oportunidades rastreadas</span>
+          </div>
+        </div>
+
+        <aside class="radar-panel" aria-label="Painel demonstrativo de sinais comerciais">
+          <div class="panel-header">
+            <span class="status-dot"></span>
+            <strong>Radar ativo</strong>
+          </div>
+
+          <div class="signal-card high">
+            <small>Sinal alto</small>
+            <p>Concurso público de limpeza publicado em Lisboa.</p>
+          </div>
+
+          <div class="signal-card medium">
+            <small>Sinal médio</small>
+            <p>Empresa em expansão abriu nova unidade operacional.</p>
+          </div>
+
+          <div class="signal-card review">
+            <small>Sinal em análise</small>
+            <p>Avaliações recentes indicam falhas operacionais recorrentes.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Áreas de atuação">
+      <div class="metric-item">Dados</div>
+      <div class="metric-item">Análise inteligente</div>
+      <div class="metric-item">Leads comerciais</div>
+      <div class="metric-item">Portugal</div>
+    </section>
+
+    <section class="section section-process">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Processo</span>
+          <h2>Como transformamos sinais em oportunidades.</h2>
+          <p>
+            A Invocryp Radar trabalha com um processo estruturado para encontrar,
+            classificar e encaminhar oportunidades comerciais para parceiros qualificados.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="step-number">01</span>
+            <h3>Monitorização</h3>
+            <p>
+              Observamos fontes públicas, concursos, movimentos empresariais,
+              mudanças operacionais e sinais comerciais relevantes.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="step-number">02</span>
+            <h3>Classificação</h3>
+            <p>
+              Cada sinal é analisado por setor, localização, urgência, valor provável
+              e potencial de conversão.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="step-number">03</span>
+            <h3>Validação</h3>
+            <p>
+              A oportunidade é organizada, documentada e preparada antes de ser
+              enviada para um parceiro comercial.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <span class="step-number">04</span>
+            <h3>Encaminhamento</h3>
+            <p>
+              O parceiro recebe a oportunidade com contexto, origem, motivo comercial
+              e rastreio interno.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sectors">
+      <div class="container">
+        <div class="section-heading split">
+          <div>
+            <span class="eyebrow">Setores</span>
+            <h2>Áreas onde os sinais costumam virar contratos.</h2>
+          </div>
+
+          <a href="/setores/" class="text-link">Ver setores monitorizados</a>
+        </div>
+
+        <div class="sector-grid">
+          <article class="sector-card">
+            <h3>Limpeza profissional</h3>
+            <p>Concursos, contratos recorrentes, espaços novos e falhas operacionais visíveis.</p>
+          </article>
+
+          <article class="sector-card">
+            <h3>Segurança</h3>
+            <p>Novas unidades, eventos, instalações comerciais e contratos empresariais.</p>
+          </article>
+
+          <article class="sector-card">
+            <h3>Manutenção</h3>
+            <p>Empresas com necessidade de suporte técnico, reparação e operação contínua.</p>
+          </article>
+
+          <article class="sector-card">
+            <h3>Obras e remodelação</h3>
+            <p>Mudanças de instalações, aberturas, remodelações e expansão física.</p>
+          </article>
+
+          <article class="sector-card">
+            <h3>Fornecimento empresarial</h3>
+            <p>Empresas que podem precisar de materiais, equipamentos ou fornecedores.</p>
+          </article>
+
+          <article class="sector-card">
+            <h3>Recrutamento e outsourcing</h3>
+            <p>Vagas abertas, equipas temporárias, expansão e necessidade operacional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-partners">
+      <div class="container partner-box">
+        <div class="partner-copy">
+          <span class="eyebrow">Parceiros</span>
+          <h2>Receba oportunidades comerciais rastreadas.</h2>
+          <p>
+            A Invocryp Radar trabalha com parceiros que procuram oportunidades comerciais
+            relevantes, documentadas e alinhadas com o seu setor de atuação.
+          </p>
+
+          <ul class="check-list">
+            <li>Oportunidades associadas a ID interno.</li>
+            <li>Termos definidos antes da entrega completa.</li>
+            <li>Modelo por comissão, lead qualificado ou assinatura.</li>
+            <li>Rastreio documental da origem e encaminhamento.</li>
+          </ul>
+
+          <a href="/parceiros/" class="btn btn-primary">Solicitar acesso como parceiro</a>
+        </div>
+
+        <div class="partner-card">
+          <small>Exemplo de registo</small>
+          <h3>INV-RD-0427</h3>
+          <p>Setor: Limpeza profissional</p>
+          <p>Localização: Lisboa</p>
+          <p>Status: Em validação comercial</p>
+          <span>Parceiro associado após aceitação dos termos.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-compliance">
+      <div class="container compliance-grid">
+        <div>
+          <span class="eyebrow">Compliance</span>
+          <h2>Dados públicos, comunicação profissional e rastreio.</h2>
+        </div>
+
+        <div class="compliance-content">
+          <p>
+            Trabalhamos com sinais disponíveis publicamente, organização comercial
+            e comunicação profissional. Cada oportunidade encaminhada é tratada
+            com contexto, finalidade legítima e respeito por boas práticas de dados.
+          </p>
+
+          <a href="/compliance/" class="text-link">Conhecer a nossa abordagem</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-box">
         <span class="eyebrow">Invocryp Radar</span>
-        <h1>Encontramos sinais de mercado que podem virar contratos.</h1>
+        <h2>Quer receber oportunidades antes que cheguem aos seus concorrentes?</h2>
         <p>
-          Monitorizamos fontes públicas, movimentos empresariais e sinais comerciais para identificar oportunidades antes que sejam perdidas.
+          Fale connosco e indique o setor, região e tipo de oportunidade que procura.
         </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#contacto">Quero receber oportunidades</a>
-          <a class="btn secondary" href="#como-funciona">Ver como funciona</a>
+          <a href="/contacto/" class="btn btn-primary">Falar com a Invocryp</a>
+          <a href="/como-funciona/" class="btn btn-secondary">Ver o processo</a>
         </div>
       </div>
-      <div class="radar-card" aria-label="Painel de sinais comerciais">
-        <div class="radar-header">
-          <span></span>
-          <strong>Radar ativo</strong>
-        </div>
-        <div class="signal high">
-          <small>Sinal alto</small>
-          <p>Concurso público de limpeza publicado em Lisboa</p>
-        </div>
-        <div class="signal medium">
-          <small>Sinal médio</small>
-          <p>Empresa em expansão abriu nova unidade</p>
-        </div>
-        <div class="signal low">
-          <small>Sinal em análise</small>
-          <p>Reviews recentes indicam falhas operacionais</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip">
-      <span>Dados públicos</span>
-      <span>Análise inteligente</span>
-      <span>Leads comerciais</span>
-      <span>Portugal</span>
-    </section>
-
-    <section id="como-funciona" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">Processo</span>
-        <h2>Como o radar trabalha</h2>
-      </div>
-      <div class="steps">
-        <article>
-          <b>01</b>
-          <h3>Monitorizamos</h3>
-          <p>Concursos, contratos, empresas, vagas, notícias locais e outros sinais públicos.</p>
-        </article>
-        <article>
-          <b>02</b>
-          <h3>Classificamos</h3>
-          <p>A IA analisa setor, urgência, valor provável e motivo da oportunidade.</p>
-        </article>
-        <article>
-          <b>03</b>
-          <h3>Entregamos</h3>
-          <p>Enviamos oportunidades filtradas para empresas que podem transformar isso em contrato.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="setores" class="section split">
-      <div>
-        <span class="eyebrow">Setores iniciais</span>
-        <h2>Começamos onde há dinheiro recorrente.</h2>
-        <p>
-          O foco inicial é em serviços B2B com contratos frequentes, margem e procura constante.
-        </p>
-      </div>
-      <div class="sector-grid">
-        <span>Limpeza profissional</span>
-        <span>Manutenção</span>
-        <span>Segurança</span>
-        <span>Obras e remodelações</span>
-        <span>Fornecimento empresarial</span>
-        <span>Outsourcing</span>
-      </div>
-    </section>
-
-    <section class="section dark-box">
-      <span class="eyebrow">Posicionamento</span>
-      <h2>Não vendemos tráfego. Vendemos inteligência comercial.</h2>
-      <p>
-        A Invocryp Radar ajuda empresas a saber onde pode existir uma oportunidade real de negócio, com base em sinais públicos e análise estruturada.
-      </p>
-    </section>
-
-    <section id="contacto" class="section contact">
-      <div>
-        <span class="eyebrow">Contacto</span>
-        <h2>Quer testar oportunidades no seu setor?</h2>
-        <p>Envie uma mensagem e diga o setor, zona de atuação e tipo de contrato que procura.</p>
-      </div>
-      <form class="contact-form" action="mailto:contacto@invocryp.com" method="post" enctype="text/plain">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="text" name="empresa" placeholder="Empresa" required>
-        <input type="email" name="email" placeholder="Email profissional" required>
-        <input type="text" name="setor" placeholder="Setor / serviço" required>
-        <textarea name="mensagem" placeholder="Que tipo de oportunidades procura?"></textarea>
-        <button class="btn primary" type="submit">Enviar contacto</button>
-      </form>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Invocryp. Inteligência comercial baseada em sinais públicos.</p>
-    <a href="mailto:contacto@invocryp.com">contacto@invocryp.com</a>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="/" class="brand footer-brand" aria-label="Invocryp Radar">
+          <span class="brand-mark">IR</span>
+          <span class="brand-text">
+            <strong>Invocryp</strong>
+            <small>Radar</small>
+          </span>
+        </a>
+
+        <p>
+          Inteligência comercial para identificar sinais de mercado, contratos e
+          oportunidades rastreadas.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <a href="/como-funciona/">Como funciona</a>
+        <a href="/setores/">Setores</a>
+        <a href="/parceiros/">Parceiros</a>
+        <a href="/compliance/">Compliance</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="/politica-privacidade/">Política de Privacidade</a>
+        <a href="/termos/">Termos de Utilização</a>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:contacto@invocryp.com">contacto@invocryp.com</a>
+        <span>Lisboa, Portugal</span>
+        <span>Oportunidades comerciais rastreadas por ID interno.</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Invocryp Radar. Todos os direitos reservados.</span>
+      <span>Dados públicos. Análise inteligente. Rastreio comercial.</span>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
