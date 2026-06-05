@@ -1049,3 +1049,226 @@
       grid-template-columns: 1fr;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* PARTNERS PAGE */
+
+.partner-intro-section {
+    padding-top: 78px;
+  }
+  
+  .partner-intro-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 58px;
+    align-items: start;
+  }
+  
+  .partner-intro-grid h2 {
+    font-size: clamp(2rem, 4vw, 3.3rem);
+  }
+  
+  .partner-intro-copy {
+    display: grid;
+    gap: 18px;
+  }
+  
+  .partner-intro-copy p {
+    color: var(--muted);
+    font-size: 1.04rem;
+  }
+  
+  .partner-flow-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  
+  .partner-flow-card {
+    min-height: 285px;
+  }
+  
+  .partner-model-section {
+    background:
+      radial-gradient(circle at 80% 10%, rgba(216, 180, 90, 0.07), transparent 32%),
+      rgba(255, 255, 255, 0.012);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .partner-model-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 38px;
+    align-items: center;
+  }
+  
+  .partner-model-copy h2 {
+    font-size: clamp(2rem, 4vw, 3.3rem);
+  }
+  
+  .partner-model-copy p {
+    margin: 18px 0 30px;
+    color: var(--muted);
+  }
+  
+  .model-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  
+  .model-card {
+    min-height: 230px;
+    padding: 26px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: rgba(17, 28, 46, 0.82);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .model-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-gold);
+  }
+  
+  .model-card small {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--gold);
+    font-size: 0.74rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  
+  .model-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+  
+  .model-card p {
+    color: var(--muted);
+    font-size: 0.94rem;
+  }
+  
+  .tracking-section {
+    padding-top: 100px;
+  }
+  
+  .tracking-box {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 36px;
+    padding: 46px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-gold);
+    background:
+      linear-gradient(135deg, rgba(17, 28, 46, 0.94), rgba(7, 11, 18, 0.94)),
+      radial-gradient(circle at top right, rgba(216, 180, 90, 0.13), transparent 34%);
+    box-shadow: var(--shadow);
+  }
+  
+  .tracking-copy h2 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+  }
+  
+  .tracking-copy p {
+    margin-top: 18px;
+    color: var(--muted);
+  }
+  
+  .tracking-card {
+    padding: 30px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: rgba(5, 8, 18, 0.72);
+    align-self: center;
+  }
+  
+  .tracking-card small {
+    color: var(--gold);
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.74rem;
+  }
+  
+  .tracking-card h3 {
+    font-size: 2.2rem;
+    margin: 16px 0 22px;
+  }
+  
+  .tracking-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .tracking-row span {
+    color: var(--muted);
+  }
+  
+  .tracking-row strong {
+    color: var(--white);
+    text-align: right;
+  }
+  
+  .tracking-card p {
+    margin-top: 20px;
+    color: var(--green);
+    font-size: 0.92rem;
+  }
+  
+  .partner-sectors-section {
+    padding-top: 90px;
+  }
+  
+  @media (max-width: 980px) {
+    .partner-intro-grid,
+    .partner-model-grid,
+    .tracking-box {
+      grid-template-columns: 1fr;
+    }
+  
+    .partner-flow-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .tracking-card {
+      align-self: stretch;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .partner-flow-grid,
+    .model-cards-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .tracking-box {
+      padding: 28px;
+    }
+  
+    .tracking-row {
+      flex-direction: column;
+      gap: 3px;
+    }
+  
+    .tracking-row strong {
+      text-align: left;
+    }
+  }
