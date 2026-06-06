@@ -80,7 +80,11 @@
 
     <section class="section contact-section">
       <div class="container contact-grid">
-        <form class="contact-form" action="mailto:contacto@invocryp.com" method="post" enctype="text/plain">
+        <form class="contact-form" id="contactForm">
+          <input type="hidden" name="access_key" value="feb480e6-e3a8-4870-9b19-c567cc974360" />
+          <input type="hidden" name="subject" value="Novo pedido comercial — Invocryp Radar" />
+          <input type="hidden" name="from_name" value="Website Invocryp Radar" />
+
           <div class="form-header">
             <span class="eyebrow">Pedido de contacto</span>
             <h2>Solicitar análise comercial</h2>
@@ -108,7 +112,7 @@
 
             <div class="form-group">
               <label for="email">Email profissional</label>
-              <input type="email" id="email" name="Email" placeholder="nome@empresa.pt" required />
+              <input type="email" id="email" name="email" placeholder="nome@empresa.pt" required />
             </div>
 
             <div class="form-group">
@@ -154,7 +158,7 @@
             <label for="mensagem">Que tipo de oportunidades procura?</label>
             <textarea
               id="mensagem"
-              name="Mensagem"
+              name="message"
               rows="6"
               placeholder="Ex: contratos de limpeza em Lisboa, empresas em expansão, concursos públicos, clientes empresariais..."
               required
@@ -172,6 +176,8 @@
           <button type="submit" class="btn btn-primary form-submit">
             Enviar pedido de contacto
           </button>
+
+          <p class="form-response" id="formResponse"></p>
 
           <p class="form-note">
             Ao enviar este pedido, os dados serão utilizados apenas para análise e resposta comercial.
