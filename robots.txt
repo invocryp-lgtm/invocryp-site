@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://invocryp.com/sitemap.xml
